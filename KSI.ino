@@ -1,9 +1,5 @@
 #include "Keyboard.h"
-int A = 131;
 void setup() {
-  // open the serial port:
-  Serial.begin(9600);
-  // initialize control over the keyboard:
   Keyboard.begin();
   pinMode(2, INPUT_PULLUP);
 }
@@ -16,7 +12,7 @@ void loop() {
     delay(100);
     keyPrinter("firefox+") ;
     delay(1000);
-    keyPrinter("fuck you bitch+") ;
+    keyPrinter("HELLO WORLD") ;
   }
 }
 void keyPrinter(String inputStr) {
